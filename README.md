@@ -1,73 +1,46 @@
-Vending Machine Uygulaması Kullanım Kılavuzu ve Dokümantasyonu
-Bu kılavuz ve dokümantasyon, Vending Machine uygulamasını başlatma, kullanma ve yönetme süreçleri hakkında bilgiler içerir.
-İçindekiler
-Genel Bakış
-Kurulum
-Ana Sayfa (App.js)
-Para Ekleme
-Ürün Satın Alma
-Makineyi Sıfırlama
-Admin Sayfası
-Makineyi Sıfırlama Yetkisi
-Scam Protection
-Uyarı Mesajları
-Uygulama Yapısı
-Redux State Yapısı
-userSlice. tsx
-authSlice. tsx
-AutoCloseAlert Komponenti
-Redux Slices
-userSlice. tsx
-authSlice. tsx
-Sayfalar
-LoginPage. tsx
-AdminPage. tsx
-LoginPage.tsx
-Genel Bakış
-Vending Machine uygulaması, kullanıcıların sanal bir otomat makinesi üzerinde çeşitli işlemler gerçekleştirmelerine olanak tanır. Kullanıcılar para ekleyebilir, ürün satın alabilir ve makineyi sıfırlayabilirler. Admin kullanıcıları, özel bir sayfa aracılığıyla makineyi sıfırlama yetkisine sahiptir. Admin kullanicisi ozel admin panelinden urunlere ekleme yapabilir ve sicakliklarini değiştirebilir. Bunun yani sira Vending machine energy efficent calisir. Admin sadece 2  adet vending machine ozelligini ayni anda acik bırakabilir. Bunun yani sira vending machine in sanal bir isiklandirma sistemi vardir ve gun içerisinde aksam 18.00 ile sabah 06.00 arasi lights are on yazarken 06.00 ile 18.00 arasi lights are off yazisi bulunur.
-Kurulum
-Bu projeyi bilgisayarınıza klonlayın veya indirin.
-Proje dizinine gidin ve terminal veya komut istemcisinde npm install komutunu çalıştırarak bağımlılıkları yükleyin.
-npm start komutunu kullanarak uygulamayı başlatın.
-Tarayıcınızda http://localhost:3000 adresine giderek uygulamayı görüntüleyin.
-Npm test komutu kullanılarak testler koşulabilir.
-Ana Sayfa (App.js)
-Para Ekleme
-"Add 1 Unit of Money", "Add 5 Unit of Money", "Add 10 Unit of Money", "Add 20 Unit of Money" butonları ile istediğiniz miktarlarda para ekleyebilirsiniz.
-Eklediğiniz para miktarı "Your Total Money" bölümünde görüntülenir.
-Ürün Satın Alma
-Her ürün için bir buton bulunmaktadır (örneğin, "Waters available: 5").
-Ürünü satın almak için ilgili butona tıklayın.
-Satın alma işlemi başarılı olduğunda bakiyenizden ürün fiyatı düşer.
-Makineyi Sıfırlama
-"Reset Machine and Collect Money" butonuna tıklayarak makineyi sıfırlayabilir ve toplamak üzere paranızı alabilirsiniz.
-"Cancel Action" butonu ile herhangi bir işlemi iptal edebilirsiniz.
-Admin Sayfası
-Makineyi Sıfırlama Yetkisi
-"Go to Admin Page" butonuna tıklayarak admin sayfasına gidin.
-Admin kullanıcı adı "admin" ve şifre "12345" ile giriş yapın.
-"Reset Machine" butonuna tıklayarak makineyi sıfırlayabilirsiniz.
-Scam Protection
-Para ekledikten sonra "Checking for Scamming" uyarı mesajı belirli bir süre görüntülenir.
-Bu işlem kullanıcının sisteme yüklediği paranın scam olup olmadığını kontrol eder.
-Uyarı Mesajları
-İşlem sırasında kullanıcıya uyarı mesajları gösterilebilir.
-Örneğin, ürün stokta yoksa veya bakiye yetersizse uygun uyarı mesajları görüntülenir.
-Uyarı mesajları belirli bir süre sonra otomatik olarak kaybolur.
-Uygulama Yapısı
-Uygulama, bir dizi React bileşenini ve Redux kullanarak yönetilen bir state'i içerir. Temel bileşenler App.js, AdminPage.js, ve LoginPage.js'dir.
-Redux State Yapısı
-Uygulama durumu (state), iki ana parçadan oluşur: kullanıcı durumu (userSlice.js) ve yetkilendirme durumu (authSlice.js).
-userSlice. tsx
-Bu dosya, ürün miktarları, sıcaklıklar ve bakiye gibi kullanıcıya özgü durumları yönetir.
-authSlice. tsx
-Bu dosya, kullanıcının giriş durumu ve yetkilerini yönetir.
-AutoCloseAlert Komponenti
-AutoCloseAlert.js dosyasında bulunan bu bileşen, belirli bir süre sonra otomatik olarak kapanan uyarı mesajları oluşturur.
-Sayfalar
-LoginPage. tsx
-Bu sayfa, kullanıcı girişi için kullanılır. Admin kullanıcı adı ve şifresi ile giriş yaparak admin sayfasına yönlendirilir.
-AdminPage. tsx
-Bu sayfa, sadece admin kullanıcıları için görünür ve makineyi sıfırlama yetkisine sahiptir. "Reset Machine" butonu ile makine sıfırlanabilir.
-LoginPage.tsx
-Bu sayfa, admin kullanicisi için kullanici adi ve sifre yazarak admin sayfasına yönlendirme yapar.
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

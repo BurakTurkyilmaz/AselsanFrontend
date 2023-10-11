@@ -2,14 +2,10 @@ import React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { store } from "./store";
 import App from "./App";
-import AdminPage from "./pages/AdminPage";
-import LoginPage from "./pages/LoginPage";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import HomePage from "./pages/HomePage";
 
 const theme = createTheme({
   palette: {

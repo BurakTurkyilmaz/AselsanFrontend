@@ -1,6 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { stat } from "fs";
-import type { RootState } from "./";
 
 // Sabit sıcaklık değerleri
 const TEMP = {

@@ -1,0 +1,12 @@
+.product-component {
+  margin: 20px 0;
+  padding: 10px 0;
+
+  .product-image {
+    background-size: contain;
+  }
+
+  .product-name {
+    text-transform: capitalize;
+  }
+}

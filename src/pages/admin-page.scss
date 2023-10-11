@@ -1,0 +1,27 @@
+.admin-page {
+  padding: 20px;
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .text-field {
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  .set-amount-button {
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  .machine-cash {
+    margin: 20px 0;
+  }
+
+  .reset-button {
+    margin-bottom: 20px;
+  }
+}
